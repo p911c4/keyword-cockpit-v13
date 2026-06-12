@@ -630,6 +630,7 @@ function renderResults() {
       const rankId   = 'rank-' + d.kw.replace(/[^a-zA-Z0-9가-힣]/g,'');
   const mypostId = 'my-'   + d.kw.replace(/[^a-zA-Z0-9가-힣]/g,'');
       loadTrend(d.kw, rankId);
+      loadMyPosts(d.kw, mypostId);
     });
   }, 60);
 }
