@@ -682,7 +682,12 @@ function card(d, i, maxT, rel) {
           <div class="trend-summary" id="trend-sum-${rankId}"></div>
         </div>
         ${relHtml}
-
+        <div class="mypost-sec">
+          <div class="mypost-lbl">🔖 뉴카 포스팅 <span class="mypost-lbl-sub">(RSS 최근 30개 + 검색 상위 100개 중)</span></div>
+          <div class="mypost-list" id="${mypostId}">
+            <div class="mypost-loading"><div class="rank-spinner"></div>불러오는 중...</div>
+          </div>
+        </div>
         <div class="rank-sec">
           <div class="rank-lbl">
             <span>네이버 블로그 상위 포스팅</span>
